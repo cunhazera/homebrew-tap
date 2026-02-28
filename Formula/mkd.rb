@@ -1,4 +1,4 @@
-class mkd < Formula
+class Mkd < Formula
   desc "My awesome CLI tool"
   homepage "https://github.com/cunhazera/mkd"
   url "https://github.com/cunhazera/mkd/archive/refs/tags/v0.1.0.tar.gz"
