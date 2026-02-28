@@ -10,9 +10,9 @@ builds:
       - arm64
 
 archives:
-  - format: tar.gz
+  - formats: ["tar.gz"]
 
-brews:
+homebrew_casks:
   - name: mkd
     repository:
       owner: your-github-username
