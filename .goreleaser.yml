@@ -15,7 +15,7 @@ archives:
 homebrew_casks:
   - name: mkd
     repository:
-      owner: your-github-username
+      owner: cunhazera
       name: homebrew-tap
     homepage: https://github.com/cunhazera/mkd
     description: TUI to render mark down files
