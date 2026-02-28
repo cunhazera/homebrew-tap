@@ -1,0 +1,22 @@
+project_name: mkd
+
+builds:
+  - main: ./main.go
+    binary: mkd
+    goos:
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - format: tar.gz
+
+brews:
+  - name: mkd
+    repository:
+      owner: your-github-username
+      name: homebrew-tap
+    homepage: https://github.com/cunhazera/mkd
+    description: TUI to render mark down files
+    license: MIT
