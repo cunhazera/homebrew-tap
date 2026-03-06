@@ -5,21 +5,21 @@
 class Mkd < Formula
   desc "A terminal markdown viewer with syntax highlighting and search"
   homepage "https://github.com/cunhazera/mkd"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cunhazera/mkd/releases/download/v0.3.0/mkd_Darwin_x86_64.tar.gz"
-      sha256 "891b96af01289b257c236c8e549aa3cee1328864ca35d3f56d8847078c954748"
+      url "https://github.com/cunhazera/mkd/releases/download/v0.3.1/mkd_Darwin_x86_64.tar.gz"
+      sha256 "c54fe341773decd21a81df57ac30aebe028dadd3b0fa7c5d5235cc35c158d2d9"
 
       define_method(:install) do
         bin.install "mkd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cunhazera/mkd/releases/download/v0.3.0/mkd_Darwin_arm64.tar.gz"
-      sha256 "53e1b33142a4acd1bca5ed5f4fa78662f700a6d03db80e71538de1caf1dc2d3b"
+      url "https://github.com/cunhazera/mkd/releases/download/v0.3.1/mkd_Darwin_arm64.tar.gz"
+      sha256 "0c5c1862fa6b3cf4ddb436a0d52fca775532d689b27e963d99d54f5b1990d320"
 
       define_method(:install) do
         bin.install "mkd"
@@ -29,15 +29,15 @@ class Mkd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cunhazera/mkd/releases/download/v0.3.0/mkd_Linux_x86_64.tar.gz"
-      sha256 "1e79a8237281dfb8946bda3e0dba74217962caa5155d1a3c417986566a6fdd37"
+      url "https://github.com/cunhazera/mkd/releases/download/v0.3.1/mkd_Linux_x86_64.tar.gz"
+      sha256 "891fe8b799b768c3e3717e7935a905177608d77ec79235cc561d493b8f5b74cf"
       define_method(:install) do
         bin.install "mkd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cunhazera/mkd/releases/download/v0.3.0/mkd_Linux_arm64.tar.gz"
-      sha256 "1d86e491e723e5f6c11e1ec0702306a4026102aa62fe3d2595eede457ed01968"
+      url "https://github.com/cunhazera/mkd/releases/download/v0.3.1/mkd_Linux_arm64.tar.gz"
+      sha256 "9e1407c335c2651c18d50de3257a158c874883062dba355bdf5574cdc82d8766"
       define_method(:install) do
         bin.install "mkd"
       end
